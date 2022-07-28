@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/testExo">
 
     <fragment
         android:id="@+id/mainFragment"
@@ -19,4 +19,9 @@
         android:name="com.sh1p1lov.streamingmusicplayer.BlankFragment"
         android:label="fragment_blank"
         tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/testExo"
+        android:name="com.sh1p1lov.streamingmusicplayer.TestExoFragment"
+        android:label="fragment_test_exo"
+        tools:layout="@layout/fragment_test_exo" />
 </navigation>
