@@ -1,4 +1,4 @@
-package com.sh1p1lov.streamingmusicplayer
+package com.sh1p1lov.streamingmusicplayer.presentation.mainactivity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

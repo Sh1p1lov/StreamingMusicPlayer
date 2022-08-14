@@ -46,7 +46,16 @@ android {
 }
 
 dependencies {
+    // data module
+    implementation project(path: ":data")
+    // domain module
+    implementation project(path: ":domain")
 
+    def koin_version = "3.2.0"
+    // Koin main features for Android
+    implementation "io.insert-koin:koin-android:$koin_version"
+
+    implementation 'com.squareup.picasso:picasso:2.8'
     implementation 'com.google.android.exoplayer:exoplayer:2.18.1'
 
     def nav_version = "2.5.0"

@@ -1,4 +1,4 @@
-package com.sh1p1lov.streamingmusicplayer
+package com.sh1p1lov.streamingmusicplayer.presentation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,7 @@ import com.google.android.exoplayer2.DefaultLoadControl
 import com.google.android.exoplayer2.ExoPlayer
 import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.audio.AudioAttributes
+import com.sh1p1lov.streamingmusicplayer.R
 import com.sh1p1lov.streamingmusicplayer.databinding.FragmentTestExoBinding
 
 class TestExoFragment : Fragment(R.layout.fragment_test_exo) {
