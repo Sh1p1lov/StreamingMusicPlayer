@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingVertical="5dp"
-            android:text="ТОП-10"
+            android:text="ТОП-10 ЗА МЕСЯЦ"
             android:textAlignment="center"
             android:textSize="24sp" />
 
@@ -27,20 +27,20 @@
             tools:itemCount="5"
             tools:listitem="@layout/music_track_recyclerview_item" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingVertical="5dp"
-            android:text="ЖАНРЫ"
-            android:textAlignment="center"
-            android:textSize="24sp" />
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingVertical="5dp"-->
+<!--            android:text="ЖАНРЫ"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="24sp" />-->
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:spanCount="2"
-            tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            tools:itemCount="5"
-            tools:listitem="@layout/genre_playlist_recyclerview_item" />
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:spanCount="2"-->
+<!--            tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"-->
+<!--            tools:itemCount="5"-->
+<!--            tools:listitem="@layout/genre_playlist_recyclerview_item" />-->
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

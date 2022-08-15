@@ -1,5 +1,6 @@
 package com.sh1p1lov.streamingmusicplayer.presentation.mainfragment
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -25,6 +26,15 @@ class MainFragmentViewModel(
                 MusicTracksOrder.POPULARITY_MONTH,
                 LIMIT
             )
-        mutableMusicTracksList.value = getTracksUseCase.execute(musicTracksRequestParameters)
+        getTracksUseCase
+            .execute(
+                musicTracksRequestParameters,
+                { musicTracks ->
+                    mutableMusicTracksList.value = musicTracks
+                },
+                { errorMsg ->
+                    Log.e("ERROR_MSG", errorMsg)
+                }
+            )
     }
 }
