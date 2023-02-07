@@ -27,6 +27,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.sh1p1lov.streamingmusicplayer.data'
 }
 
 dependencies {

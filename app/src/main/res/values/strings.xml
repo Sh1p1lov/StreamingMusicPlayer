@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">StreamingMusicPlayer</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Streaming Music Player</string>
+    <string name="channel_name">Музыкальный плеер</string>
+    <string name="channel_description">Используется для отображения музыкального плеера.</string>
+    <string name="fragment_main_title_1">Популярные новинки</string>
+    <string name="fragment_main_title_2">Жанры</string>
 </resources>

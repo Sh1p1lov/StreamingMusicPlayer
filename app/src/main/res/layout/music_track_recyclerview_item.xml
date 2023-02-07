@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
+<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="2dp"
-    android:foreground="?android:attr/selectableItemBackground"
-    android:clickable="true"
-    android:focusable="true"
-    app:cardCornerRadius="12dp">
+    android:layout_marginVertical="2dp"
+    android:layout_marginHorizontal="8dp"
+    style="@style/Widget.StreamingMusicPlayer.CardView.MusicTrackItem">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/purple_200">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/album_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -31,7 +28,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginHorizontal="24dp"
-            android:textSize="24sp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="?colorSecondaryVariant"
             android:maxLines="1"
             android:ellipsize="end"
             app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +44,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="24dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
+            android:textColor="?colorSecondaryVariant"
             android:maxLines="1"
             android:ellipsize="end"
             app:layout_constraintEnd_toEndOf="parent"
@@ -53,4 +53,4 @@
             app:layout_constraintTop_toBottomOf="@+id/track_name"
             tools:text="Artist Name" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

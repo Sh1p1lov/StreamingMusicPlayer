@@ -6,6 +6,17 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="black_alpha_40">#65000000</color>
+    <color name="black_alpha_15">#27000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="white_alpha_40">#65FFFFFF</color>
+    <color name="white_alpha_15">#27FFFFFF</color>
     <color name="yellow">#FFFF00</color>
+    <color name="coffee_dark_900">#040C0E</color>
+    <color name="coffee_dark_700">#132226</color>
+    <color name="coffee_dark_500">#525B56</color>
+    <color name="coffee_700">#BE9063</color>
+    <color name="coffee_500">#A4978E</color>
+    <color name="musicBottomSheet.tint.dark">#1C1B1F</color>
+    <color name="musicBottomSheet.tint.light">#E7E0EC</color>
 </resources>

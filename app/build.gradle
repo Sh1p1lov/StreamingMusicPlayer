@@ -15,12 +15,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.sh1p1lov.streamingmusicplayer"
         minSdk 24
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -43,6 +43,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'com.sh1p1lov.streamingmusicplayer'
 }
 
 dependencies {
@@ -55,16 +56,30 @@ dependencies {
     // Koin main features for Android
     implementation "io.insert-koin:koin-android:$koin_version"
 
+    // Picasso
     implementation 'com.squareup.picasso:picasso:2.8'
-    implementation 'com.google.android.exoplayer:exoplayer:2.18.1'
 
-    def nav_version = "2.5.0"
+    // Navigation
+    def nav_version = "2.5.3"
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.2'
-    implementation 'com.google.android.material:material:1.6.1'
+    // ExoPlayer
+    def exoplayer_version = "2.18.2"
+    implementation "com.google.android.exoplayer:exoplayer:$exoplayer_version"
+    implementation "com.google.android.exoplayer:extension-mediasession:$exoplayer_version"
+
+    // Gson
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    // Jackson
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.3'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.10.3'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.10.3'
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

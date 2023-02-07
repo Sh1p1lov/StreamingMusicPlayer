@@ -9,10 +9,19 @@
         android:id="@+id/mainFragment"
         android:name="com.sh1p1lov.streamingmusicplayer.presentation.mainfragment.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_genreFragment"
+            app:destination="@id/genreFragment">
+        </action>
+    </fragment>
     <fragment
-        android:id="@+id/testExo"
-        android:name="com.sh1p1lov.streamingmusicplayer.presentation.TestExoFragment"
-        android:label="fragment_test_exo"
-        tools:layout="@layout/fragment_test_exo" />
+        android:id="@+id/genreFragment"
+        android:name="com.sh1p1lov.streamingmusicplayer.presentation.genrefragment.GenreFragment"
+        android:label="GenreFragment"
+        tools:layout="@layout/fragment_genre" >
+        <argument
+            android:name="cardItemTransitionName"
+            app:argType="string" />
+    </fragment>
 </navigation>
