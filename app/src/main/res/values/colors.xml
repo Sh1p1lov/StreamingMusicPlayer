@@ -17,6 +17,11 @@
     <color name="coffee_dark_500">#525B56</color>
     <color name="coffee_700">#BE9063</color>
     <color name="coffee_500">#A4978E</color>
+    <color name="jazz_violet_700">#C59CDB</color>
+    <color name="jazz_violet_500">#DFD0F1</color>
+    <color name="jazz_beige">#F3EED6</color>
+    <color name="jazz_brown_700">#701B05</color>
+    <color name="jazz_brown_500">#A67B04</color>
     <color name="musicBottomSheet.tint.dark">#1C1B1F</color>
     <color name="musicBottomSheet.tint.light">#E7E0EC</color>
 </resources>
