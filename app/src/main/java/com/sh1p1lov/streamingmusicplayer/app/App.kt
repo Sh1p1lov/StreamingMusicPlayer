@@ -9,7 +9,7 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 
-// App
+// App new comment 21:39
 class App : Application() {
     override fun onCreate() {
         super.onCreate()
