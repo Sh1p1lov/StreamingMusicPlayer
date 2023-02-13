@@ -5,4 +5,6 @@ import com.sh1p1lov.streamingmusicplayer.domain.models.MusicTracksRequestParamet
 
 interface MusicServiceRepository {
     suspend fun getTracks(musicTracksRequestParameters: MusicTracksRequestParameters): List<MusicTrack>
+
+    // update some data
 }
