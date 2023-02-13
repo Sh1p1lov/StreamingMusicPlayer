@@ -5,7 +5,7 @@ import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface MusicServiceNewAfterCommit {
+interface MusicServiceNew {
 
     @GET("${MusicService.API_VERSION}/tracks/?client_id=${MusicService.CLIENT_ID}&format=json&include=musicinfo+stats")
     suspend fun getTracks(
