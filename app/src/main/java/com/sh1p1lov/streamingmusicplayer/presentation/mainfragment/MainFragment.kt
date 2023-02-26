@@ -23,7 +23,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         private const val TAG = "MainFragmentLog"
     }
 
-    private lateinit var binding: FragmentMainBinding
+    private var _binding: FragmentMainBinding? = null
+    private val binding: FragmentMainBinding get() = _binding!!
     private val vm: MainFragmentViewModel by viewModel()
     private val musicTracksAdapter: MusicTracksAdapter = get()
     private val musicGenresAdapter: MusicGenresAdapter = get()
@@ -31,7 +32,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding = FragmentMainBinding.bind(view)
+        _binding = FragmentMainBinding.bind(view)
         Log.d(TAG, object{}.javaClass.enclosingMethod?.name.toString())
 
         if (vm.isPageLoaded.value == null) {
@@ -87,5 +88,10 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         musicPlayer.setStoppedListener {
             musicTracksAdapter.unselect()
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

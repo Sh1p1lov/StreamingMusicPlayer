@@ -20,7 +20,8 @@ class GenreFragment : Fragment(R.layout.fragment_genre) {
         private const val TAG = "GenreFragmentLog"
     }
 
-    private lateinit var binding: FragmentGenreBinding
+    private var _binding: FragmentGenreBinding? = null
+    private val binding: FragmentGenreBinding get() = _binding!!
     private val musicTracksAdapter: MusicTracksAdapter = get()
     private val args: GenreFragmentArgs by navArgs()
     private val vm: GenreFragmentViewModel by viewModel()
@@ -28,7 +29,7 @@ class GenreFragment : Fragment(R.layout.fragment_genre) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding = FragmentGenreBinding.bind(view)
+        _binding = FragmentGenreBinding.bind(view)
 
         if (vm.track.value == null) {
             vm.getTracksByTag(args.cardItemTransitionName)
@@ -78,5 +79,10 @@ class GenreFragment : Fragment(R.layout.fragment_genre) {
             findNavController()
                 .popBackStack()
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
